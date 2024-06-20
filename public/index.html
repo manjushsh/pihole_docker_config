@@ -3,11 +3,41 @@
 
 <head>
     <title>Setting up Pi-hole inside Docker on Raspberry Pi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Setting up Pi-hole inside Docker on Raspberry Pi" />
+    <link rel="icon" href="images//favicon.ico" />
 
-    <script src="prism.js"></script>
-    <link href="css/prism.css" rel="stylesheet">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Setting up Pi-hole inside Docker on Raspberry Pi">
+    <meta property="og:url" content="https://github.com/manjushsh/pihole_docker_config">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/manjushsh/pihole_docker_config/main/public/images/og-image.png">
+    <meta property="og:description" content="Guide for Setting up Pi-hole within Docker on a Raspberry Pi">
+    <meta property="article:author" content="manjushsh">
+    <meta property="article:section" content="Technology">
+    <meta property="article:tag" content="docker">
+    <meta property="article:tag" content="raspberry-pi">
+    <meta property="article:tag" content="pihole">
+    <meta property="article:tag" content="security">
+    <meta property="article:tag" content="containers">
+    <meta property="article:tag" content="homelab">
+    <meta property="article:tag" content="selfhosted">
+
+    <!-- Twitter/X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="pimylifeup.com">
+    <meta property="twitter:url" content="https://pimylifeup.com/pi-hole-docker/">
+    <meta name="twitter:title" content="Running Pi-Hole within a Docker Container">
+    <meta name="twitter:description" content="Simple steps to run this network-wide ad blocker">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/manjushsh/pihole_docker_config/main/public/images/og-image.png">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="css/prism.css" rel="stylesheet" />
 </head>
 
 <body class="container">
@@ -19,7 +49,7 @@
         <ul>
             <li>Raspberry Pi 4 with Raspbian OS installed</li>
             <li>Docker installed on your Raspberry Pi 4 ( Can be installed with
-                <code class="language-bash">curl -sSL https://get.docker.com | sh</code> ). Refer <a
+                <code class="language-bash">curl -sSL https://get.docker.com | sh</code> ). You can refer <a
                     href="https://pimylifeup.com/raspberry-pi-docker/" target="_blank">
                     this article
                 </a>
@@ -92,6 +122,7 @@ services:
             <code class="language-bash">http://&lt;your_raspberry_pi_ip_address&gt;/admin</code>.
         </p>
     </section>
+    <script src="prism.js"></script>
 </body>
 
 </html>
