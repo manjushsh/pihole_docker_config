@@ -123,19 +123,27 @@ services:
     <script src="prism.js"></script>
     <script async>
         (async () => {
-            await fetch(`http://ip-api.com/json/`).then(response => response.json()).then(async data => {
+            await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=7f9ef1f33fb74a39b372591e9fa04073`).then(response => response.json()).then(async data => {
                 const event = {
                     type: 'pihole_docker_config',
                     url: 'https://github.com/manjushsh/pihole_docker_config',
-                    ip: data.query,
-                    lat: data.lat,
-                    location: data.lon,
+                    calling_code: data.calling_code,
+                    languages: data.languages,
+                    ip: data.ip,
+                    latitude: data.latitude,
+                    longitude: data.longitude,
                     city: data.city,
-                    zip: data.zip,
+                    zipcode: data.zipcode,
                     region: data.region,
-                    country: data.country,
+                    country_name: data.country_name,
                     timezone: data.timezone,
                     isp: data.isp,
+                    continent_name: data.continent_name,
+                    country_capital: data.country_capital,
+                    state_prov: data.state_prov,
+                    country_emoji: data.country_emoji,
+                    currency: data.currency,
+                    time_zone: data.time_zone,
                 };
                 const payload = {
                     api_key: "d0eb7090-4e9f-4540-8123-6de70889d7f1",
