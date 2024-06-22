@@ -1,6 +1,6 @@
-# Setting up Pi-hole inside Docker on Raspberry Pi 4
+# Setup Pi Hole within Docker on Raspberry Pi
 
-This guide will walk you through the process of setting up Pi-hole, a network-wide ad blocker, inside a Docker container on your Raspberry Pi.
+This guide will walk you through the process of setting up Pi-hole, a network-wide ad blocker, within a Docker container on your Raspberry Pi.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ sudo usermod -aG docker pi
     ```bash
     sudo mkdir -p /opt/stacks/pihole
     ```
-    and cd to newly created directory.
+    and use `cd` command to switch to the newly created directory.
 
     ```bash
     cd /opt/stacks/pihole
@@ -75,7 +75,7 @@ sudo usermod -aG docker pi
 
     ```
 
-3. Pull the image, create and run a docker container:
+3. Use the following command to pull the image, create and run a docker container:
 
     ```bash
     sudo docker compose up -d
