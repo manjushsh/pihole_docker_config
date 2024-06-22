@@ -7,10 +7,28 @@ This guide will walk you through the process of setting up Pi-hole, a network-wi
 Before you begin, make sure you have the following:
 
 - Raspberry Pi 4 with Raspbian OS installed
-- Docker installed on your Raspberry Pi 4 (Can be installed with `curl -sSL https://get.docker.com | sh`)
+- Docker installed on your Raspberry Pi 4
 - Static IP assigned to your Pi in router.
 
-## Installation Steps
+## Raspberry Pi and Docker Setup:
+
+### Raspberry Pi and Micro SD
+To set up my Pi Hole I used a Raspberry Pi 4 with 32 GB Micro SD.
+
+![Raspberian being written to SD Card](/public//images/raspberian-install.png)
+
+### Docker and Docker Compose 🐳
+I also installed Docker on my Raspberry Pi: I didn't want to re-install everything in case something goes wrong.
+
+Once installed, I did make sure the user pi can use it (I don't want to use sudo every time)
+
+```bash
+curl -fsSl https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker pi
+```
+
+## Pi Hole Installation Steps
 
 1.  Start by creating a directory where you will store the configuration file for the Pi-Hole docker container.
     ```bash
