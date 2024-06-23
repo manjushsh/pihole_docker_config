@@ -92,6 +92,15 @@ sudo usermod -aG docker pi
     ```
 
 5. Once the container is up and running, open a web browser and navigate to `http://<your_raspberry_pi_ip_address>`.
+    If you don't know the IP address of your Raspberry Pi, just run
+
+    ```bash 
+    hostname -I
+
+    192.168.1.162 172.17.0.1 172.29.0.1 169.254.70.85 172.21.0.1 169.254.52.242 2a00:23c7:8e8b:1201:f35:95a7:4c14:6ed
+    ```
+
+    So, in my case, my Raspberry's IP address is 192.168.1.162. It shouldn't change until you disconnect the Raspberry from the Internet > or you restart the router.
 
 6. After the setup is complete, configure your router's DNS settings to use the IP address of your Raspberry Pi as the primary DNS server.
 
